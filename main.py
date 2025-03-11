@@ -8,6 +8,7 @@ def home():
     with open('map.js', 'r') as f:
             
         mapjs = f.read()
+        #return render_template('test.html')
         return render_template('fuelmap.html', mapjs=mapjs)
 
 if __name__ == '__main__':
